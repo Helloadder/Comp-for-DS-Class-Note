@@ -24,3 +24,26 @@ class Student(Human):
 
 shubham = Student("Shubham", 34, 'USF')
 shubham.introduce()
+
+class Baby(Human):
+    def __init__(self, name, age, month, wage=0):
+        super().__init__(name, age, wage)
+        self.month = month
+
+    def introduce(self):
+        print("Goo Goo Gaga")
+
+    def print_sleep_hours(self):
+        if self.month < 1:
+            hours = 16
+        elif self.month <= 6:
+            hours = 15
+        else:
+            hours = 14
+        print(f"{self.name} sleeps {hours} hours a day.")
+
+b = Baby("Nora", 0, 3)
+b.introduce()
+b.print_sleep_hours()
+
+
