@@ -14,3 +14,13 @@ try:
     print(shubham.__wage)
 except:
     print("Can't access __wage")
+
+class Student(Human):
+    def __init__(self, name, age, school, wage=0):
+        super().__init__(name, age, wage)
+        self.school = school
+    def introduce(self):
+        print(f"Hi, I'm {self.name} and I study at {self.school}.")
+
+shubham = Student("Shubham", 34, 'USF')
+shubham.introduce()
