@@ -1,0 +1,16 @@
+# Build output (generated — keep out of git)
+dist/
+build/
+*.egg-info/
+
+# Python caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Environments
+.venv/
+venv/
+
+# OS
+.DS_Store
